@@ -1,0 +1,22 @@
+type: edu
+files:
+  - name: src/platform/CodeSharingPlatform.java
+    visible: true
+    learner_created: false
+  - name: src/resources/application.properties
+    visible: true
+    learner_created: false
+  - name: test/CodeSharingPlatformTest.java
+    learner_created: false
+  - name: build.gradle
+    visible: true
+    learner_created: false
+  - name: src/platform/Code.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/projects/130/stages/692/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 29 Sep 2026 06:32:38 UTC"
+record: -1

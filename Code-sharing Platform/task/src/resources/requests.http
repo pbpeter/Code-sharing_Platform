@@ -1,0 +1,146 @@
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "class Test {\n    public static void main(String[] args) {\n        System.out.println(\"Hello Stage 2\");\n    }\n}"
+}
+
+### Erster Code
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "class FirstCode {}"
+}
+
+### Zweiter Code
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "class SecondCode {}"
+}
+
+### Stage 3 Tests
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "class FirstCode {}"
+}
+
+### Stage 3 Tests 2
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "class SecondCode {}"
+}
+
+### Dingsbums
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "public class Test { }"
+}
+
+### Stage 5 Test
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "System.out.println(\"secret\");",
+  "time": 10,
+  "views": 0
+}
+
+### Stage 5 Test 2 - views
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "View restricted test",
+  "time": 0,
+  "views": 3
+}
+
+### Stage 5 Test 3 - time
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "Combined restriction",
+  "time": 60,
+  "views": 3
+}
+
+### Stage 5 Test 4 - time - 1
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "One more time - Combined restriction 1",
+  "time": 0,
+  "views": 0
+}
+
+### Stage 5 Test 4 - time - 2
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "One more time - Combined restriction 2",
+  "time": 60,
+  "views": 0
+}
+
+### Stage 5 Test 4 - time - 3
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "One more time - Combined restriction 3",
+  "time": 0,
+  "views": 3
+}
+
+### Stage 5 Test 5 - Darstellung code.ftlh
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "Secret test code",
+  "time": 300,
+  "views": 5
+}
+
+### Stage 5 Test 6 - Nur Time
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "Only time",
+  "time": 300,
+  "views": 0
+}
+
+### Stage 5 Test 7 - Nur Views
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "Only views",
+  "time": 0,
+  "views": 5
+}
+
+### Stage 5 Test 8 - not in latest
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+
+{
+  "code": "totally restricted",
+  "time": 900,
+  "views": 5
+}
